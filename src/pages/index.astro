@@ -1,0 +1,311 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+//import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+//import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+const metadata = {
+  title: 'IconPillar  - An E-commerce Solution Company',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  <Hero2
+  tagline=""
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Work With Us!',
+      href: 'https://github.com/onwidget/astrowind',
+      target: '_blank',
+      icon: '',
+    },
+  ]}
+ image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+>
+<Fragment slot="title"> 
+  <span class="hidden xl:inline"> Your Trusted <span class="text-accent dark:text-white highlight"> Shopify </span>Ecommerce Partner</span>
+  
+</Fragment>
+
+<Fragment slot="subtitle">
+  <span class="hidden sm:inline">
+    We are a leading Shopify agency dedicated to crafting exceptional design, development, and eCommerce marketing solutions tailored for global brands.
+  </span>
+</Fragment>
+</Hero2>
+
+  <Features
+    id="features"
+    tagline=""
+    title="Why Choose Us as Shopify Experts?"
+    subtitle="We are Shopify experts for a reason. Our team is dedicated to mastering the Shopify platform and harnessing its full potential to empower businesses like yours."
+    items={[
+      {
+        title: 'Extensive Experience',
+        description:
+          'We have years of hands-on experience working with Shopify, building and optimizing stores for a wide range of industries and business sizes.',
+        icon: 'tabler:world-upload',
+      },
+      {
+        title: 'Custom Solutions',
+        description:
+          'Our approach is tailored to your unique requirements. We don\'t believe in one-size-fits-all solutions; instead, we craft customized strategies that align with your business goals.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Design Excellence',
+        description:
+          'Our design team creates stunning, user-friendly Shopify stores that captivate visitors and enhance the overall shopping experience.',
+        icon: 'tabler:brand-abstract',
+      },
+      {
+        title: 'Technical Proficiency',
+        description:
+          'From seamless integrations to advanced functionalities, we excel in the technical aspects of Shopify development, ensuring your store operates flawlessly.',
+        icon: 'tabler:code-circle-2',
+      },
+      {
+        title: 'Marketing Expertise',
+        description:
+          "Driving traffic and increasing sales are our specialties. We leverage effective eCommerce marketing strategies to maximize your store's visibility and revenue.",
+        icon: 'tabler:ad-circle',
+      },
+      {
+        title: 'Dedicated Support',
+        description:
+          'Your success is our priority. We provide ongoing support and guidance, ensuring your Shopify store remains optimized and performs at its best.',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Proven Results',
+        description:
+          'We have a track record of delivering results. Our clients see tangible improvements in conversions, customer engagement, and overall business growth.',
+        icon: 'tabler:chart-bar',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Our Solutions"
+    title="Our Shopify Solutions"
+    items={[
+      {
+        title: 'Shopify Design and Development',
+        description:
+          'At Icon Pillar, we specialize in Shopify design and development, with a proven track record of crafting Shopify websites for startups and established businesses.',
+      },
+      {
+        title: 'Migrating your existing E-com site to Shopify',
+        description:
+          'Migrating to Shopify? Let us simplify the process for you. Icon Pillar offers seamless migration services to Shopify, ensuring a smooth transition for your online business',
+      },
+      {
+        title: 'Custom Shopify Theme Development',
+        description:
+          'Looking for a custom Shopify theme? Icon Pillar specializes in bespoke Shopify theme development, tailored to your brand\'s unique style and functionality needs',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
+       Gain a competitive advantage by incorporating industry leading practices
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Shopify Store Maintenance',
+        description: `Ensure your Shopify store stays at its best with Icon Pillar's reliable maintenance services. From updates and optimizations to troubleshooting, we've got you covered for a seamless online presence`,
+      },
+      {
+        title: 'Shopify Advertising & Marketing',
+        description:
+          'Boost your Shopify store\'s visibility and sales with our expert advertising and marketing services. Icon Pillar helps drive targeted traffic and conversions through strategic campaigns tailored to your business goals',
+      },
+      {
+        title: 'Shopify App Development',
+        description:
+          "Looking for custom Shopify app development using modern technologies like React.js, Node.js, and GraphQL? Icon Pillar specializes in creating bespoke Shopify apps using these advanced tools to enhance functionality and optimize processes for your online store.",
+      },
+      {
+        title: 'Consult with our Experts',
+        description:
+          'We\'re here to listen, analyze, and dedicate our best efforts to customize your store to be #1. Enjoy a free consultation with us to discuss your goals and discover how we can elevate your online presence.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      alt: 'Blueprint Image',
+    }}
+  >
+    <Fragment slot="content"></Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Icon Pillar's Shopify Store Development Workflow."
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Discovery and Planning  </span>',
+        description:
+          "Understand the customer's business goals, target audience, and competitive landscape. <br/>Gather requirements and preferences for the store's design, features, and functionality.",
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Design and Development</em>',
+        description:
+          "Select a suitable Shopify theme or create a custom design based on the customer's brand identity.<br />Customize the theme to incorporate branding elements such as colors, typography, and imagery.",
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Product Setup and Configuration</span>',
+        description:
+          'Upload product listings with detailed descriptions, images, pricing, and variants.<br />Configure payment gateways, shipping settings, and tax settings based on the customer\'s requirements.',
+        icon: 'tabler:paint',
+      },
+      {
+        title: 'Testing and Launch',
+        description:
+          'Conduct thorough testing to ensure the store functions correctly across devices and browsers.<br />Set up the custom domain and launch the Shopify store, providing training and support as needed.',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  />
+
+  <Brands
+  title="Some of our Incredible Clients  "
+  subtitle="Take a look at some of the recent clients we've collaborated with, which encompass platform migrations, complete web development projects, web design initiatives, and effective marketing strategies aimed at delivering results."
+  icons={[]}
+  images={[
+    
+    {
+      src: 'https://ucarecdn.com/b22ba755-c7b0-406d-a8c2-8d9080973745/chettinadBatter.jpg',
+      alt: 'chettinadBatter',
+    },
+    {
+      src: 'https://ucarecdn.com/b291adc7-05a6-4d6c-bd5d-0d5a4a749bb5/colourCrafts.jpg',
+      alt: 'colourCrafts',
+    },
+    {
+      src: 'https://ucarecdn.com/1f13eed8-2efc-40db-a499-e7c45bde8820/pet_tracker_favicon1.png',
+      alt: 'PetTracker',
+    },
+    {
+      src: 'https://ucarecdn.com/57149384-487d-4799-ba4a-cc1a26d70095/VAYALLogo.png',
+      alt: 'vayalFoods',
+    },
+    {
+      src: 'https://ucarecdn.com/aa01ddbc-3af3-41c7-a6f6-6c52252491fe/tonersTouch.jpg',
+      alt: 'tonersTouch',
+    },
+    {
+      src: 'https://ucarecdn.com/2596be0f-6cd7-46f8-ae67-5c91ec464aac/Greenink_logo.png',
+      alt: 'TheGreenInk',
+    },
+    {
+      src: 'https://ucarecdn.com/baaedf10-80bf-40e1-9580-5622b4ef351e/nalvazhiOrganic.png',
+      alt: 'nalvazhiOrganic',
+    }
+  ]}
+/>
+
+  <!-- HighlightedPosts Widget ******* 
+
+  <BlogLatestPosts
+    title="Find out more content in our Blog"
+    information={`The blog is used to display AstroWind documentation.
+                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
+                        Astro is a very interesting technology. Thanks.
+                `}
+  />
+
+  FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'What services does Icon Pillar offer for Shopify stores?',
+        description:
+          "Icon Pillar specializes in a range of services for Shopify stores, including design and development, theme customization, app development, migration and replatforming, store maintenance, advertising and marketing, and consultation for eCommerce strategies.",
+      },
+      {
+        title: 'How does Icon Pillar approach Shopify theme customization?',
+        description:
+          'Yes, we offer migration and replatforming services to seamlessly transfer your online store from platforms like Magento, WordPress, BigCommerce, WooCommerce, and more to Shopify. Our experienced team ensures a smooth transition with minimal disruption to your business.',
+      },
+      {
+        title: 'Does Icon Pillar provide ongoing support and maintenance for Shopify stores?',
+        description:
+          "Absolutely, we offer comprehensive store maintenance services, including regular updates, performance optimization, troubleshooting, and continuous improvement based on analytics and customer feedback. Our goal is to keep your Shopify store running smoothly and efficiently.",
+      },
+      {
+        title: "How can Icon Pillar help with Shopify advertising and marketing?",
+        description:
+          "We specialize in Shopify advertising and marketing strategies tailored to drive traffic, increase conversions, and boost sales. Our services include PPC campaigns, social media marketing, email marketing, SEO optimization, and more, aimed at maximizing your store's visibility and revenue.",
+      },
+      {
+        title: 'Is consultation available for developing eCommerce strategies with Icon Pillar?',
+        description:
+          "Yes, we provide free consultations to discuss your eCommerce goals and requirements. Our experts will listen, analyze, and propose tailored solutions to customize your Shopify store for success and growth in the competitive online marketplace.",
+      },
+      {
+        title: 'Which sectors and industries does Icon Pillar specialize in?',
+        description:
+          "Icon Pillar specializes in a wide range of sectors including fashion, beauty, home goods, technology, food and beverage, health, art, toys, and more. Our expertise spans diverse industries, ensuring tailored solutions to meet unique business needs. If you have a specific sector in mind or need assistance in a different industry, reach out for personalized consultation.",
+      },
+    ]}
+  />
+
+  <!-- Stats Widget ****************** 
+
+  <Stats
+    stats={[
+      { title: 'Downloads', amount: '132K' },
+      { title: 'Stars', amount: '24.8K' },
+      { title: 'Forks', amount: '10.3K' },
+      { title: 'Users', amount: '48.4K' },
+    ]}
+  />-->
+</Layout>

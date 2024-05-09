@@ -1,0 +1,65 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Contact',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="Contact" title="Let's Connect!" />
+
+  <ContactUs
+    id="form"
+    title="Drop us a message today!"
+    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    inputs={[
+      {
+        type: 'text',
+        name: 'name',
+        label: 'Name',
+      },
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Email',
+      },
+    ]}
+    textarea={{
+      label: 'Message',
+    }}
+    disclaimer={{
+      label:
+        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+    }}
+    description="Our support team typically responds within 24 business hours."
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="We are here to help!"
+    items={[
+      {
+        title: 'Phone',
+        description: '+91-78455 68743',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Email',
+        description: 'info@iconpillar.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Location',
+        description: 'G Floor, KCT Tech Park, Forge Factory, 3 Athipalayam Rd, Chinnavedampatti, Coimbatore , Tamil Nadu, India - 641049',
+        icon: 'tabler:map-pin',
+      },
+    ]}
+  />
+</Layout>
