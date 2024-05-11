@@ -1,0 +1,127 @@
+---
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Icon Pillar - Shopify Solutions',
+};
+---
+
+<Layout metadata={metadata}>
+<!-- Content Widget **************** -->
+
+<Content
+isReversed
+tagline="Our Solutions"
+title="Our Shopify Solutions"
+items={[
+  {
+    title: 'Shopify Design and Development',
+    description:
+      'At Icon Pillar, we specialize in Shopify design and development, with a proven track record of crafting Shopify websites for startups and established businesses.',
+  },
+  {
+    title: 'Migrating your existing E-com site to Shopify',
+    description:
+      'Migrating to Shopify? Let us simplify the process for you. Icon Pillar offers seamless migration services to Shopify, ensuring a smooth transition for your online business',
+  },
+  {
+    title: 'Custom Shopify Theme Development',
+    description:
+      'Looking for a custom Shopify theme? Icon Pillar specializes in bespoke Shopify theme development, tailored to your brand\'s unique style and functionality needs',
+  },
+]}
+image={{
+  src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
+   Gain a competitive advantage by incorporating industry leading practices
+</Fragment>
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Content>
+
+<!-- Content Widget **************** -->
+
+<Content
+isAfterContent
+items={[
+  {
+    title: 'Shopify Store Maintenance',
+    description: `Ensure your Shopify store stays at its best with Icon Pillar's reliable maintenance services. From updates and optimizations to troubleshooting, we've got you covered for a seamless online presence`,
+  },
+  {
+    title: 'Shopify Advertising & Marketing',
+    description:
+      'Boost your Shopify store\'s visibility and sales with our expert advertising and marketing services. Icon Pillar helps drive targeted traffic and conversions through strategic campaigns tailored to your business goals',
+  },
+  {
+    title: 'Shopify App Development',
+    description:
+      "Looking for custom Shopify app development using modern technologies like React.js, Node.js, and GraphQL? Icon Pillar specializes in creating bespoke Shopify apps using these advanced tools to enhance functionality and optimize processes for your online store.",
+  },
+  {
+    title: 'Consult with our Experts',
+    description:
+      'We\'re here to listen, analyze, and dedicate our best efforts to customize your store to be #1. Enjoy a free consultation with us to discuss your goals and discover how we can elevate your online presence.',
+  },
+]}
+image={{
+  src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+  alt: 'Blueprint Image',
+}}
+>
+<Fragment slot="content"></Fragment>
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Content>
+
+<!-- Content Widget **************** -->
+
+
+
+<!-- Steps Widget ****************** -->
+
+<Steps
+title="Icon Pillar's Shopify Store Development Workflow."
+items={[
+  {
+    title: 'Step 1: <span class="font-medium">Discovery and Planning  </span>',
+    description:
+      "Understand the customer's business goals, target audience, and competitive landscape. <br/>Gather requirements and preferences for the store's design, features, and functionality.",
+    icon: 'tabler:package',
+  },
+  {
+    title: 'Step 2: <span class="font-medium">Design and Development</em>',
+    description:
+      "Select a suitable Shopify theme or create a custom design based on the customer's brand identity.<br />Customize the theme to incorporate branding elements such as colors, typography, and imagery.",
+    icon: 'tabler:letter-case',
+  },
+  {
+    title: 'Step 3: <span class="font-medium">Product Setup and Configuration</span>',
+    description:
+      'Upload product listings with detailed descriptions, images, pricing, and variants.<br />Configure payment gateways, shipping settings, and tax settings based on the customer\'s requirements.',
+    icon: 'tabler:paint',
+  },
+  {
+    title: 'Testing and Launch',
+    description:
+      'Conduct thorough testing to ensure the store functions correctly across devices and browsers.<br />Set up the custom domain and launch the Shopify store, providing training and support as needed.',
+    icon: 'tabler:check',
+  },
+]}
+image={{
+  src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+  alt: 'Steps image',
+}}
+/>
+
+ </Layout>
