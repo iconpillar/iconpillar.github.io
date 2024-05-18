@@ -15,7 +15,7 @@ export const headerData = {
       text: 'About',
       href: getPermalink('/about')      
     },  
-    {
+   /* {
       text: 'Services',
       links: [
         {
@@ -25,7 +25,7 @@ export const headerData = {
         /*{
           text: 'Shopify App Development',
           href: getPermalink('/landing/sales'),
-        },*/
+        },
         {
           text: 'SEO',
           href: getPermalink('/seo'),
@@ -35,7 +35,7 @@ export const headerData = {
           href: getPermalink('/landing/click-through'),
         }
       ],
-    },
+    },*/
     {
       text: 'Blog',
       //href: getBlogPermalink(),
@@ -54,10 +54,10 @@ export const footerData = {
     {
       title: 'Company',
       links: [
-        { text: 'About US', href: '#' },
-        { text: 'Our Services', href: '#' },
-        { text: 'Workflows', href: '#' },
-        { text: 'Contact Us', href: '#' },
+        { text: 'About US', href: getPermalink('/about') },
+        //{ text: 'Our Services', href: '#' },
+       // { text: 'Workflows', href: '#' },
+        { text: 'Contact Us', href: getPermalink('/contact') },
         { text: 'Terms and Condtions', href:  getPermalink('/terms') },
         { text: 'Privacy Policy', href: getPermalink('/privacy') },
       ],
@@ -71,7 +71,7 @@ export const footerData = {
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: getAsset('/rss.xml') },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: '#' },
     //{ ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
