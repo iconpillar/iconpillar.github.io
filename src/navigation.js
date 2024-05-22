@@ -36,11 +36,11 @@ export const headerData = {
         }
       ],
     },
-    {
+    /*{
       text: 'Blog',
       //href: getBlogPermalink(),
       href:'#'    
-    },
+    },*/
     {
       text: 'Contact',
       href: getPermalink('/contact')      
