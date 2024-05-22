@@ -54,8 +54,9 @@ export const footerData = {
       title: 'Company',
       links: [
         { text: 'About US', href: getPermalink('/about') },
-        //{ text: 'Our Services', href: '#' },
-       // { text: 'Workflows', href: '#' },
+        { text: 'Shopify Solutions', href: getPermalink('/shopifyService') },
+        { text: 'SEO', href: getPermalink('/seo') },
+        { text: 'Social Media Marketing', href: getPermalink('/social-media-marketing') },
         { text: 'Contact Us', href: getPermalink('/contact') },
         { text: 'Terms and Condtions', href:  getPermalink('/terms') },
         { text: 'Privacy Policy', href: getPermalink('/privacy') },
