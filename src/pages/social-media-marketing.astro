@@ -1,0 +1,65 @@
+---
+import Content from '~/components/widgets/Content.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Seach Engine Optimization - Icon Pillar',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Content Widget **************** -->
+  <Hero
+    tagline="Social Media Campaign Marketing"
+
+  >
+    <Fragment slot="title">
+        <span class="text-accent dark:text-white highlight"> Social Media </span>Campaign Marketing
+    </Fragment>
+
+    <Fragment slot="subtitle">
+        Icon Pillar also offers comprehensive social media campaign marketing to boost your brand's online presence and engagement.</Fragment>
+
+  </Hero>
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Social Media Strategy Development',
+        description:
+          'We create a tailored social media strategy based on your business goals, target audience, and industry trends. Our strategy includes: Platform selection (Facebook, Instagram, X, LinkedIn, etc.) Content planning and scheduling,Engagement tactics and community management',
+        icon: 'tabler:brand-meta',
+      },
+      {
+        title: 'Content Creation and Management',
+        description:
+          'Engaging content is key to successful social media campaigns. We handle: Creating high-quality posts (images, videos, infographics), Crafting compelling captions and call-to-actions,Scheduling posts for optimal reach and engagement',
+        icon: 'tabler:background',
+      },
+      {
+        title: 'Paid Advertising Campaigns',
+        description:
+          'Maximize your reach with targeted social media ads. Our services include: Campaign setup and management, Audience targeting and segmentation, Ad creatives and copywriting, Performance tracking and optimization',
+        icon: 'tabler:badge-ad',
+      },
+      {
+        title: 'Analytics and Reporting',
+        description:
+          'We provide detailed reports on your social media performance, including: Engagement metrics (likes, shares, comments), Follower growth, Traffic and conversions from social media,Insights and recommendations for improvement',
+        icon: 'tabler:brand-google-analytics',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Social Media Strategy Development</h3>
+    </Fragment>
+  </Content>
+</Layout>

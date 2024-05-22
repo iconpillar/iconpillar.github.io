@@ -15,7 +15,7 @@ export const headerData = {
       text: 'About',
       href: getPermalink('/about')      
     },  
-   /* {
+    {
       text: 'Services',
       links: [
         {
@@ -25,17 +25,17 @@ export const headerData = {
         /*{
           text: 'Shopify App Development',
           href: getPermalink('/landing/sales'),
-        },
+        },*/
         {
           text: 'SEO',
           href: getPermalink('/seo'),
         },
         {
-          text: 'Social Media Marketing Management',
-          href: getPermalink('/landing/click-through'),
+          text: 'Social Media Marketing',
+          href: getPermalink('/social-media-marketing'),
         }
       ],
-    },*/
+    },
     {
       text: 'Blog',
       //href: getBlogPermalink(),
@@ -45,8 +45,7 @@ export const headerData = {
       text: 'Contact',
       href: getPermalink('/contact')      
     },  
-  ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  ], 
 };
 
 export const footerData = {
@@ -68,10 +67,10 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/icon_pillar' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: '#' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/iconpillar-digital-solutions/' },
     //{ ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
