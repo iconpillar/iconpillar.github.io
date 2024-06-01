@@ -9,7 +9,7 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Icon Pillar
+    default: Icon Pillar Digital Solutions
     template: '%s — Icon Pillar'
   description: "Icon Pillar: Elevate your eCommerce success with expert Shopify SEO and social media marketing services. Boost visibility, drive traffic, and increase sales with our customized strategies. Contact us today to transform your online store!"
   robots:
@@ -66,7 +66,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: 'G-8F9JSP571K' # or "G-XXXXXXXXXX"
 
 ui:
   theme: 'light:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
