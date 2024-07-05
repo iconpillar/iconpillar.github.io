@@ -1,5 +1,5 @@
 site:
-  name:  Icon Pillar
+  name:  Icon Pillar Digital Solutions
   site: 'https://iconpillar.com'
   base: '/'
   trailingSlash: false
@@ -33,7 +33,7 @@ i18n:
 
 apps:
   blog:
-    isEnabled: true
+    isEnabled: false
     postsPerPage: 6
 
     post:
