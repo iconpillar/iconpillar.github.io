@@ -36,11 +36,11 @@ export const headerData = {
         }
       ],
     },
-    /*{
-      text: 'Blog',
+    {
+      text: 'Our Products',
       //href: getBlogPermalink(),
-      href:'#'    
-    },*/
+      href:'https://wappcloud.com'    
+    },
     {
       text: 'Contact',
       href: getPermalink('/contact')      
