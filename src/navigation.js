@@ -38,8 +38,13 @@ export const headerData = {
     },
     {
       text: 'Our Products',
-      //href: getBlogPermalink(),
-      href:'https://wappcloud.com'    
+      links: [
+        {
+          text: 'WappCloud - WhatsApp Marketing Tool',
+          href: 'https://www.wappcloud.com',
+          target: '_blank',
+        },
+      ],
     },
     {
       text: 'Contact',
